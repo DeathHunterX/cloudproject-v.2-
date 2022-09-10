@@ -1,0 +1,68 @@
+.auth_page{
+    width: 100%;
+    /* background: #fdfdfd; */
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/026/656/222/large/-.jpg?1589366680");
+    position: relative;
+}
+
+.login {
+    min-height: 95vh;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 95vh;
+}
+
+
+.register {
+    min-height: 115vh;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 115vh;
+}
+
+.fg_pass {
+    min-height: 115vh;
+}
+
+.auth_page form {
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 50px 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.auth_page form .pass {
+    position: relative;
+}
+
+.auth_page form .pass small {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width:  768px) {
+    .auth_page{
+        background-image: url(../images/scenery.jpg);
+    }
+
+    .login {
+        min-height: 105vh;
+        background-repeat: no-repeat;
+        background-size: 100% 105vh;
+    }
+
+    .register {
+        min-height: 115vh;
+        background-repeat: no-repeat;
+        background-size: 100% 115vh;
+    }
+}

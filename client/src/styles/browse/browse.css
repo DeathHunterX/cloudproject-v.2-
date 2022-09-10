@@ -1,0 +1,52 @@
+.browse-container {
+    display: block;
+    position: relative;
+    background: #fdfdfd;
+    min-height: 100vh;
+    padding: 30px;
+    
+}
+
+/* ------------------ FILTER CARD  ------------------------- */
+
+.search-content {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 25px;
+}
+
+.filter-container {
+    max-width: 300px;
+    width: 100%;
+}
+
+.filter-container .filter-card {
+    min-height: 40vh;
+    padding: 16px;
+    border: 1px #fdfdfd;
+    box-shadow: 0 0 30px #ddd;
+}
+
+
+.filter-card .filter-body {
+    width: 100%;
+    position: relative;
+}
+
+.filter-body .hourly-form {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 15px;
+}
+
+
+
+/* ------------------ RESULT CARD  ------------------------- */
+
+.result_list .result_card .card {
+    padding: 20px;
+    border: none;
+}
+
+
+

@@ -1,0 +1,109 @@
+.job_container {
+    max-width: 1400px;
+    min-height: 350px;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    box-shadow: 0 0 40px #ddd;
+    margin: 20px auto;
+}
+
+
+/* -----------------  Job Status Card  --------------- */
+
+.job_card {
+    margin: 0 20px;
+    padding: 20px;
+}
+.job_card .card {
+    box-shadow: 0 0 40px #ddd;
+}
+
+.job_card .card .card_body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.job_card .card_body-content  {
+    margin-right: 10%;
+}
+
+.card_body_header {
+    display: flex;
+    align-items: center;    
+}
+
+.card_body_header p {
+    margin: 0 0 0.5rem 10px;
+}
+
+.card_body .status-box {
+    position: relative;
+    width: 128px;
+    height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    padding: 30px;
+    border-radius: 0.25rem;
+}
+
+.card_body .status-box span {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+}
+
+
+/* -----------------  Job Applicants Card  --------------- */
+
+.job_card .applicant_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+.applicant_card .applicant_body {
+    max-width: 1000px;
+    width: 100%;
+}
+.applicant_card .card_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.applicant_card .card_header .card_name {
+    transform: translateY(3px);
+    margin-left: 10px;
+}
+
+
+.card-status form .status-box {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25rem;
+}
+
+/* ------------------ RESPONSIVE  ------------------------- */
+@media only screen and (max-width:  768px) {
+    .job_card {
+        margin: 0;
+        padding: 10px;
+    }
+    .card_body_header {
+        display: block;
+    }
+
+    .card_body_header p {
+        margin: 0 0 0.5rem 0;
+    }
+}

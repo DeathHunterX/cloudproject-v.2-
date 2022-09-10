@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+}
+
+img {
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----------- AUTH ------------ */
+@import url("./auth.css");
+
+/* ----------- LOADING ------------ */
+@import url("./alert/loading.css");
+
+/* ----------- TOAST ------------ */
+@import url("./alert/toast.css");
+
+
+/* ----------- HEADER ------------ */
+@import url("./homepage.css");
+
+/* ----------- HEADER ------------ */
+@import url("./header/header.css");
+
+/* ----------- AVATAR ------------ */
+@import url("./avatar.css");
+
+/* ----------- PROFILE ------------ */
+@import url("./profile/profile.css");
+
+/* ----------- POST ------------ */
+@import url("./post/post.css");
+
+
+/* ----------- BROWSE ------------ */
+@import url("./browse/browse.css");
+
+/* ----------- PAGINATION ------------ */
+@import url("./browse/Pagination.css");
+
+/* ----------- PAGINATION ------------ */
+@import url("./job/job.css");
+
+/* ----------- PAGINATION ------------ */
+@import url("./rating.css");
+
+/* ----------- ICON ------------ */
+@import url("./icon.css");
+
+/* ----------- MESSAGE ------------ */
+@import url("./message.css");
+
+
+
+/* ------------------ RESPONSIVE  ------------------------- */
+@media only screen and (max-width:  768px) {
+  .header .menu {
+      position: absolute;
+      top: calc(100vh - 50px);
+      left: 0;
+      width: 100%;
+      height: 50px;
+      box-shadow: 0 0 10px #ddd;
+      z-index: 2;
+      background: #f8f9fa;
+  }
+
+  .header .menu .navbar-nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+  .navbar-nav .nav-item-left {
+    display: none;
+  }
+  
+  .header .menu .dropdown-menu {
+      bottom: 100%;
+      top: auto;
+      left: -7.5rem;
+      
+  }
+  .dropdown-menu .dropdown-item {
+      text-align: right;
+  }
+
+  .navbar-bottom {
+    display: none;
+  }
+  .message {
+    height: calc(100vh - 150px);
+  }
+
+  
+}

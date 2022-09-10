@@ -1,0 +1,264 @@
+.hero {
+    background-color: rgba(0,0,0,.5);
+    background: url('../images/hire.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.hero:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
+
+.hero .search-text {
+    margin: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.content .btn1{
+    margin-right: 2%;
+    background-color: #f20091;
+    border: 1px solid #f20091;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: .75rem 1.2rem;
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    text-decoration-thickness: auto;
+    transition-duration: .2s;
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 45%;
+}
+
+
+.btn1:hover {
+    border-color: #E4AEC5;
+    background-color:#E4AEC5;
+    color: #FFFFFF;
+    
+  }
+  
+.btn1:active {
+    border-color: #FFC4DD;
+    color: #FFC4DD;
+    fill: #FFC4DD;
+}
+
+
+.content .btn2{
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: .75rem 1.2rem;
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    text-decoration-thickness: auto;
+    transition-duration: .2s;
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 45%;
+
+}
+
+.btn2:focus {
+  color: #171e29;
+}
+
+.btn2:hover {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+.btn2:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+
+@media screen and (max-width: 680px) {
+    .hero {
+        height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .btnbox{
+        display: grid;
+        grid-template-columns: repeat(1,222%);
+    }
+    .btn1{
+        margin-bottom: 1%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+.homepage {
+    width: 100%;
+}
+
+.homepage .icon{
+    width: 50%;
+    margin-left: 45%;
+}
+
+.homepage hr{
+    margin: 5% 0 0 5%;
+    width: 90%;
+}
+
+.boxcon1{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    margin: 5% 5% 0;
+}
+
+.best1 h1{
+    margin: 3% 0 0 3%;
+}
+
+.best1 h2{
+    margin-left: 12%;
+}
+
+.best1 p{
+    margin: 20% 5% 0 -15%;
+}
+
+.img1{
+    width: 70%;
+    margin: -7% 0 0 -5%
+}
+
+.boxcon1 .container1{
+    width: 150%;
+    margin-left: -50%;
+}
+
+.best3{
+    margin-left: 3%;
+}
+
+.best3 h1{
+    margin-top: 3%;
+}
+
+.best3 h4{
+    margin: 1% 0 3% 0;
+}
+
+.boxcon3{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.boxcon3 .icon2{
+    width: 70%;
+    height: 70%;
+}
+
+@media screen and (max-width:940px) {
+    .best1 {
+        margin: 1rem 0;
+    }
+
+    .homepage .icon {
+        width: 35%;
+    }
+    .boxcon1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 10%;
+    }
+
+    .best1 p{
+        margin: 5% 0 0 5%;
+    }
+
+    .best1 > div p {
+        margin: 1rem;
+        font-size: 1rem;
+    }
+
+    .best1 .container1 {
+        margin-bottom: 10%;
+    }
+
+    .img1{
+        width: 70%;
+        margin: -7% 0 0 -20%;
+    }
+
+    .boxcon3 .container{
+        margin-top: 5%;
+    }
+
+    .boxcon3{
+        margin-left: 15%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .best1 > div p {
+        margin: 1rem .5rem;
+    }
+
+}

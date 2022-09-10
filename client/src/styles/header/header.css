@@ -1,0 +1,78 @@
+.header {
+    width: 100%;
+    min-height: 56px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow: 0 0 10px #ddd;
+    background: #f8f9fa;
+}
+
+.header .navbar {
+    width: 100%;
+    height: 62px;
+}
+
+.header .logo h1 {
+    font-size: 1.5rem;
+}
+
+/* ------------------ HEADER MENU  ------------------------- */
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.header .avatar-menu {
+    position: absolute;
+    left: inherit;
+    right: 0;
+}
+.header .menu label {
+    cursor: pointer;
+}
+
+.header .menu .menu-icon {
+    display: none;
+}
+
+/* ------------------ SEARCH BAR  ------------------------- */
+
+.search{
+    background-color: #fff;
+    border-radius: 40px;
+}
+
+.search_input{
+    border: 0;
+    outline: 0;
+    background: none;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+.search .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+}
+
+.search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    background-color:black;
+}
+
+.search_icon:hover{
+    background: whitesmoke;
+    color: black
+}
+
