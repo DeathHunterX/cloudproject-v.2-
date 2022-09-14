@@ -18,10 +18,10 @@ const Disclaimer = () => {
             <h2>Definitions</h2>
             <p>For the purposes of this Disclaimer:</p>
             <ul>
-                <li><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Disclaimer) refers to Looking For Helpers.</li>
+                <li><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Disclaimer) refers to Logo.</li>
                 <li><strong>Service</strong> refers to the Website.</li>
                 <li><strong>You</strong> means the individual accessing the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</li>
-                <li><strong>Website</strong> refers to Looking For Helpers, accessible from <a href="http://localhost:3000/" rel="external nofollow noopener noreferrer" target="_blank">http://localhost:3000/</a></li>
+                <li><strong>Website</strong> refers to Logo, accessible from <a href="http://localhost:3000/" rel="external nofollow noopener noreferrer" target="_blank">http://localhost:3000/</a></li>
             </ul>
             <h1>Disclaimer</h1>
             <p>The information contained on the Service is for general information purposes only.</p>

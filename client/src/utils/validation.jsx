@@ -1,3 +1,5 @@
+import React from 'react'
+
 export const registerValidation = ({username, fullname, email, password, cf_password}) => {
     const err = {}
 

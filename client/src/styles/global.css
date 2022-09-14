@@ -38,8 +38,11 @@ a {
 @import url("./alert/toast.css");
 
 
-/* ----------- HEADER ------------ */
+/* ----------- HOMEPAGE ------------ */
 @import url("./homepage.css");
+
+/* ----------- ABOUT US ------------ */
+@import url("./footer/about-us.css");
 
 /* ----------- HEADER ------------ */
 @import url("./header/header.css");

@@ -11,7 +11,7 @@ const EULA = () => {
         <div style={{padding: "30px"}}>
             <h1>End-User License Agreement (&quot;Agreement&quot;)</h1>
             <p>Last updated: May 14, 2022</p>
-            <p>Please read this End-User License Agreement carefully before clicking the &quot;I Agree&quot; button, downloading or using Looking For Helper.</p>
+            <p>Please read this End-User License Agreement carefully before clicking the &quot;I Agree&quot; button, downloading or using Logo.</p>
             <h1>Interpretation and Definitions</h1>
             <h2>Interpretation</h2>
             <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
@@ -22,10 +22,10 @@ const EULA = () => {
                     <p><strong>Agreement</strong> means this End-User License Agreement that forms the entire agreement between You and the Company regarding the use of the Application. This Agreement has been created with the help of the <a href="https://www.freeprivacypolicy.com/free-eula-generator/" target="_blank" rel="noreferrer">EULA Generator</a>.</p>
                 </li>
                 <li>
-                    <p><strong>Application</strong> means the software program provided by the Company downloaded by You to a Device, named Looking For Helper</p>
+                    <p><strong>Application</strong> means the software program provided by the Company downloaded by You to a Device, named Logo</p>
                 </li>
                 <li>
-                    <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Looking For Helper.</p>
+                    <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Logo.</p>
                 </li>
                 <li>
                     <p><strong>Content</strong> refers to content such as text, images, or other information that can be posted, uploaded, linked to or otherwise made available by You, regardless of the form of that content.</p>

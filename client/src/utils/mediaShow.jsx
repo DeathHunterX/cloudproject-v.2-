@@ -1,3 +1,5 @@
+import React from 'react'
+
 export const imageShow = (src, theme) => {
     return(
         <img src={src} alt="images" className="img-thumbnail"

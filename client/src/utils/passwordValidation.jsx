@@ -1,3 +1,5 @@
+import React from 'react'
+
 const passwordValidation = ({password, cf_password}) => {
     const err = {}
     

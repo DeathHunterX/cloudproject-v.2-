@@ -25,7 +25,7 @@ const TermAndConditions = () => {
                     <p><strong>Country</strong> refers to:  Vietnam</p>
                 </li>
                 <li>
-                    <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Looking For Helpers.</p>
+                    <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Logo.</p>
                 </li>
                 <li>
                     <p><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</p>
@@ -40,7 +40,7 @@ const TermAndConditions = () => {
                     <p><strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</p>
                 </li>
                 <li>
-                    <p><strong>Website</strong> refers to Looking For Helpers, accessible from <a href="http://localhost:3000/" rel="external nofollow noopener noreferrer" target="_blank">http://localhost:3000/</a></p>
+                    <p><strong>Website</strong> refers to Logo, accessible from <a href="http://localhost:3000/" rel="external nofollow noopener noreferrer" target="_blank">http://localhost:3000/</a></p>
                 </li>
                 <li>
                     <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
@@ -90,10 +90,10 @@ const TermAndConditions = () => {
             <p>If you have any questions about these Terms and Conditions, You can contact us:</p>
             <ul>
                 <li>
-                    <p>By email: Looking For Helpers</p>
+                    <p>By email: Logo</p>
                 </li>
                 <li>
-                    <p>By visiting this page on our website: [Looking For Helpers](Looking For Helpers)</p>
+                    <p>By visiting this page on our website: [Logo](Logo)</p>
                 </li>
                 <li>
                     <p>By phone number: 545364373583634</p>

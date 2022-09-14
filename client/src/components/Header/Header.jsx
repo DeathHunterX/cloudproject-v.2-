@@ -14,7 +14,7 @@ const Header = () => {
     const navLinks = [
         {id: 'home_header', label: 'Home', path: '/'},
         {id: 'browse_header', label: 'Browse', path: '/browse'},
-        {id: 'about_header', label: 'About', path: '/about'},
+        {id: 'about_header', label: 'About', path: '/about-us'},
         // {id: 'create_header', label: 'Create Post', path: '/createPost'},
         // {id: 'job_header', label: 'Job Status', path: '/jobs'},
         // {id: 'list_header', label: 'Post List', path: '/lists'},
