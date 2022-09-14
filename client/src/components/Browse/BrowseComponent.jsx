@@ -59,6 +59,7 @@ const Browse = () => {
     } else {
       setLimit(value)
       searchParams.set('limit', value)
+      searchParams.set('page', 1)
       setSearchParams(searchParams, {replace: true})
     }
   }

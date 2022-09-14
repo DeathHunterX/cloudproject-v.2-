@@ -15,6 +15,10 @@ const FilterList = ({filter, idx}) => {
         }
     }
 
+    const setFilter = (value) => {
+        return searchParams.get(`${value}`) || ""
+    }
+
     return (
         <div className="accordion-item" key={idx}>
             <h2 className="accordion-header" id={`${filter.id}`}>
@@ -25,11 +29,15 @@ const FilterList = ({filter, idx}) => {
             <div id={`collapse${idx}`} className="accordion-collapse collapse show" aria-labelledby={`${filter.id}`}>
                 <div className="accordion-body">
                     <div className="form-group">
-                        <select className="form-select" id={`${filter.id}`} name={`${filter.id}`} value={searchParams.get(`${filter.id}`)} onChange={handleFilteredInput}>
+                
+                        <select className="form-select" 
+                        id={`${filter.id}`} 
+                        name={`${filter.id}`} 
+                        value={setFilter(`${filter.id}`)} onChange={handleFilteredInput}>
                             {
                                 filter.selection.map((selection, idx2) => {
                                     return (
-                                        <option value={`${selection.id}`}>{selection.name}</option>
+                                        <option value={`${selection.id}`} key={idx2}>{selection.name}</option>
                                     )
                                 })
                             }

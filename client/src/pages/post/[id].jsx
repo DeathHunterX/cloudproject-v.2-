@@ -34,7 +34,6 @@ const PostProfile = () => {
 
             {
                 post.map(item => (
-                    // <PostCard key={item._id} post={item} />
                     <PostInfo key={item._id} post={item} />
                 ))
             }

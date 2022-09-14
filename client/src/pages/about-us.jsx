@@ -1,8 +1,9 @@
 import React from 'react'
+import AboutUsComponent from '../components/Footer/AboutUs'
 
 const AboutUs = () => {
   return (
-    <div>AboutUs</div>
+    <AboutUsComponent />
   )
 }
 

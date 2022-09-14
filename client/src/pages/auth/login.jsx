@@ -35,7 +35,7 @@ const Login = () => {
   return (
     <div className="auth_page login">
       <form onSubmit={handleSubmit}>
-        <h3 className="text-uppercase">Looking For Helpers</h3>
+        <h3 className="text-center">Login</h3>
         <div className="mb-4">
           <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
           <input type="email" className="form-control" id="exampleInputEmail1" name="email"
@@ -63,12 +63,12 @@ const Login = () => {
           <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
         </div> */}
         <div className="row mb-4">
-          <div className="col d-flex justify-content-start">
+          {/* <div className="col d-flex justify-content-start">
             <div className="form-check">
               <input className="form-check-input" type="checkbox" value="" id="form2Example31" />
               <label className="form-check-label" htmlFor="form2Example31"> Remember me </label>
             </div>
-          </div>
+          </div> */}
 
           <div className="col d-flex justify-content-end">
             <Link to="/forgotPassword">Forgot Password?</Link>

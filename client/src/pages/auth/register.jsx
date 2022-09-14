@@ -43,7 +43,7 @@ const Register = () => {
     return (
     <div className="auth_page register">
         <form onSubmit={handleSubmit}>
-            <h3 className="text-uppercase">Looking For Helpers</h3>
+            <h3 className="text-center">Register</h3>
             <div className="mb-3">
                 <label htmlFor="username" className="form-label">User Name</label>
                 <input type="text" className="form-control" id="username" name="username"

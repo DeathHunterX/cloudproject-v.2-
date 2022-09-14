@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Info from '../../components/Profile/Info'
-import Posts from '../../components/Profile/Posts'
+import MoreInfo from '../../components/Profile/MoreInfo'
 
 import { useParams } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
@@ -29,9 +29,12 @@ const Profile = () => {
         ?
         <img className="d-block mx-auto my-4" src={LoadIcon} alt="loading" />
         : 
-        <Info id={id} auth={auth} dispatch={dispatch} profile={profile} />
+        <>
+          <Info id={id} auth={auth} dispatch={dispatch} profile={profile} />
+          <MoreInfo id={id} auth={auth} />
+        </>
+
       }
-        <Posts id={id} auth={auth} />
         
     </div>
   )

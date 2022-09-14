@@ -49,8 +49,8 @@ const sendEmail = (to, url, txt) => {
         html: 
             `
             <div style="max-width: 700px; margin:auto; border: 10px solid #ddd; padding: 50px 20px; font-size: 110%;">
-            <h2 style="text-align: center; text-transform: uppercase;color: teal;">Welcome to the Looking For Helpers.</h2>
-            <p>To reset your Looking For Helper account password click on the button below. 
+            <h2 style="text-align: center; text-transform: uppercase;color: teal;">Welcome to the Logo.</h2>
+            <p>To reset your Logo account password click on the button below. 
             Please note that reset link will expire in 48 hours. If you didn't issue a password reset you can safely ignore this email.
             </p>
             

@@ -48,7 +48,11 @@ app.use('/api', require('./routes/messageRouter'))                      // Messa
 
 
 app.use('/api', require('./routes/uploadImg'))                          //Upload Image
+app.use('/api', require('./routes/uploadFiles'))                        //Upload Files
 
+app.get('/', (req, res) => {
+    res.json({msg: "Hello World!"})
+})
 
 // Connect to MongoDB
 const mongoose = require('mongoose');

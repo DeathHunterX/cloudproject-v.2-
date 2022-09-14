@@ -19,11 +19,7 @@ const Lists = () => {
         ? 
           <img src={LoadIcon} alt="loading" className="d-block mx-auto" /> 
         : 
-          homePosts.result === 0 
-          ? 
-            <h2 className='text-center'>No Posts</h2> 
-          : 
-            <PostList /> 
+        <PostList /> 
       }  
     </div>
   )

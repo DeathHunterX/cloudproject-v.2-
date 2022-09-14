@@ -5,19 +5,25 @@ export const filterMap = [
         selection: [
             {
                 id: "",
-                name: "--Select--"
+                name: "--Select--",
+                value: "filter"
             },
             {
                 id: "fullTimeJob",
-                name: "Full Time Job"
+                name: "Full Time Job",
+                value: "fullTimeJob"
+
             },
             {
                 id: "partTimeJob",
-                name: "Part Time Job"
+                name: "Part Time Job",
+                value: "partTimeJob"
+
             },
             {
                 id: "freelancer",
-                name: "Freelancer"
+                name: "Freelancer",
+                value: "freelancer"
             }
         ]
     }

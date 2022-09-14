@@ -7,8 +7,8 @@ import PostCard from './PostCard'
 const PostList = () => {
     const { homePosts }  = useSelector(state => state)
     return (
-        
-        <div className="posts">
+          
+        <div className="post_cards">
             {
                 homePosts.posts.map(post => (
                     <Link to={`/post/${post._id}`} className ="text-dark" key={post._id}>

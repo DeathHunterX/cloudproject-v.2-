@@ -15,9 +15,9 @@ const Header = () => {
         {id: 'home_header', label: 'Home', path: '/'},
         {id: 'browse_header', label: 'Browse', path: '/browse'},
         {id: 'about_header', label: 'About', path: '/about'},
-        {id: 'create_header', label: 'Create Post', path: '/createPost'},
-
-
+        // {id: 'create_header', label: 'Create Post', path: '/createPost'},
+        // {id: 'job_header', label: 'Job Status', path: '/jobs'},
+        // {id: 'list_header', label: 'Post List', path: '/lists'},
     ]
 
   return (
@@ -38,34 +38,42 @@ const Header = () => {
                             <Link className="nav-link" to={link.path}>
                                 {link.label}
                             </Link>
+                            
                         </li>
                     )
                 })}
 
-                {auth.token ?  
-                <li className="nav-item px-2 dropdown">
-                    <span className="nav-link" id="navbarDropdown" 
-                    role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <Avatar src={auth.user.avatar} size="medium-avatar"/>
-                    </span>
-                    
-                    <div className="dropdown-menu avatar-menu" aria-labelledby="navbarDropdown">
-                        <span className="text-muted ms-2">Account</span>
-                        <Link className="dropdown-item" to={`/dashboard/${auth.user._id}`}>Dashboard</Link>
-                        <Link className="dropdown-item" to={`/profile/${auth.user._id}`}>My Profile</Link>
-                        <Link className="dropdown-item" to={`/enrolled/${auth.user._id}`}>Enrolled Course</Link>
-                        <hr className="dropdown-divider"/>
-                        <span className="text-muted ms-2">Instructor</span>
-                        <Link className="dropdown-item" to={`/myCourses/${auth.user._id}`}>My Course</Link>
-                        <hr className="dropdown-divider"/>
-                        <Link className="dropdown-item" to={`/settings/`}>Settings</Link>
-                        <Link className="dropdown-item" to="/"
-                        onClick={() => dispatch(logout())}
-                        >
-                            Log Out
+                {auth.token ? 
+                <>
+                    <li className={`nav-item px-2 create_header`}>
+                        <Link className="nav-link" to={"/createPost"}>
+                            Create Post
                         </Link>
-                    </div>
-                </li>
+                    </li> 
+                    <li className="nav-item px-2 dropdown">
+                        <span className="nav-link" id="navbarDropdown" 
+                        role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <Avatar src={auth.user.avatar} size="medium-avatar"/>
+                        </span>
+                        
+                        <div className="dropdown-menu avatar-menu" aria-labelledby="navbarDropdown">
+                            <span className="text-muted ms-2">Account</span>
+                            <Link className="dropdown-item" to={`/profile/${auth.user._id}`}>My Profile</Link>
+                            <Link className="dropdown-item" to={`/message`}>Message</Link>
+                            <Link className="dropdown-item" to={`/jobs`}>Job Status</Link>
+                            <hr className="dropdown-divider"/>
+                            <span className="text-muted ms-2">Employer</span>
+                            <Link className="dropdown-item" to={`/lists`}>Post List</Link>
+                            <hr className="dropdown-divider"/>
+                            <Link className="dropdown-item" to={`/settings/`}>Settings</Link>
+                            <Link className="dropdown-item" to="/"
+                            onClick={() => dispatch(logout())}
+                            >
+                                Log Out
+                            </Link>
+                        </div>
+                    </li>
+                </>
                 :
                 <li className="nav-item px-2 loginRegister">
                 <Link className="nav-link" to={"/login"}>

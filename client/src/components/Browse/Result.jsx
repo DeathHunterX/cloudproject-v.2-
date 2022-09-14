@@ -10,7 +10,7 @@ const Result = ({posts}) => {
         <Link to={`/post/${post._id}`} className ="text-dark">
           <div className="card my-3">
             <div className="card_body">
-                <div className="card_body-content">
+                <div className="card_body_content">
                     <h5 className="title">{post.title}</h5>
                     <p className="d-flex"><Rating name="read-only" value={post.rating} precision={0.5} readOnly/>({post.rating})</p>
                     <p>

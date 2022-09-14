@@ -7,11 +7,11 @@ import HomePage3 from '../components/HomePage/HomePage3'
 const Home = () => {
   return (
     <div className="homepage">
-      {/* <HomePage />
+      <HomePage />
       <HomeHeader />
       <HomePage2 />
-      <HomePage3 /> */}
-      HomePage
+      <HomePage3 />
+      {/* HomePage */}
     </div>
   )
 }

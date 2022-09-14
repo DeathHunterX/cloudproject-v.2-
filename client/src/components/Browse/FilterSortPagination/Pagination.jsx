@@ -1,16 +1,17 @@
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 
 
-const Pagination = React.memo(({totalPages, limit}) => {
+const Pagination = React.memo(({totalPages}) => {
 
-  const [searchParams, setSearchParams] = useSearchParams({
-    page: 1,
-    limit: 2,
-  })
-  const pageCurr = parseInt(searchParams.get('page') ? searchParams.get('page') : 1)
-  const [page, setPage] = useState(pageCurr)
+  const [searchParams, setSearchParams] = useSearchParams({})
 
+  const [page, setPage] = useState(1)
+
+  // Update page when limit items set
+  useEffect(() => {
+    setPage(parseInt(searchParams.get('page') ? searchParams.get('page') : 1))
+  }, [searchParams])
   
   const { firstArr, lastArr } = useMemo(() => {
     const newArr = [...Array(totalPages)].map((_, i) => i + 1)

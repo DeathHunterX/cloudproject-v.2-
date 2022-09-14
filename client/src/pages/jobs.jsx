@@ -26,6 +26,13 @@ const Jobs = () => {
       jobStatus.loading ?
         <img src={LoadIcon} alt="loading" className="d-block mx-auto" />
         : 
+        jobStatus.result === 0 
+        ?
+        <div className="d-flex align-items-center justify-content-center" style={{minHeight: "50vh"}}>
+          <h2 className="p-3">You don't apply any job. Go to browse to find suitable job for you</h2>
+        </div>
+        
+        :
         <div className="job_card">
           {
             jobStatus.jobs.map(job => (

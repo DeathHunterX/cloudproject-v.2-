@@ -1,3 +1,4 @@
+import React from 'react'
 import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
@@ -12,7 +13,7 @@ const store = createStore(
 )
 
 const DataProvider = ({children}) =>  {
-    return(
+    return (
         <Provider store={store}>
             {children}
         </Provider>

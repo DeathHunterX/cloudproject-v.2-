@@ -21,7 +21,11 @@ const Applicant = () => {
       {
       jobStatus.loading ?
         <img src={LoadIcon} alt="loading" className="d-block mx-auto" />
-        : 
+        :
+        jobStatus.result === 0 
+        ?
+        <h4 className="text-center">No Applicant Currently</h4>
+        :
         <JobApplicant jobStatus={jobStatus} />
       }  
     </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { forgotPassword } from '../../redux/actions/authAction'
 
 const ForgotPassword = () => {
@@ -31,6 +32,9 @@ const ForgotPassword = () => {
             <input type="email" className="form-control" id="exampleInputEmail1" name="email"
             aria-describedby="emailHelp" onChange={handleChangeInput} value={email} />
             <button type="submit" className="btn btn-primary w-100 mt-3">Verify your email</button>
+            
+            <p className="my-2 mt-4">You remember your account? <Link to="/login">Login Now</Link></p>
+
         </div>
       </form>
     </div>
