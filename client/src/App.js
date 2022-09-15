@@ -14,6 +14,7 @@ import Register from './pages/auth/register'
 import ForgotPassword from './pages/auth/forgot_password';
 import ResetPassword from './pages/auth/reset_password';
 import BrowseJobs from './pages/browse';
+import AboutUs from './pages/about-us';
 
 import Alert from './components/Alert/Alert.js';
 
@@ -61,10 +62,12 @@ function App() {
             <Route exact path='/register' element={ <Register /> } />
             <Route exact path='/forgotPassword' element={ <ForgotPassword /> } />
             <Route exact path='/user/reset/:token' element={ <ResetPassword /> } />
+
             
             {/* Header */}
             <Route exact path='/browse' element={ <BrowseJobs /> } />
 
+            <Route exact path='/about-us' element={ <AboutUs /> } />
 
 
             <Route exact path='/' element={ <PrivateRouter/> }>
